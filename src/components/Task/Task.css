@@ -1,0 +1,84 @@
+.task-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(231, 241, 248);
+    width: 100%;
+}
+
+.check-column {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.x-span {
+    font-family: 'Fredoka One', cursive;
+    position: relative;
+    top: -2px;
+    line-height: 22px;
+    font-size: 28px;
+}
+
+.btn-delete {
+    outline: none;
+    border-radius: 6px;
+    background-color: white;
+    width: 39px;
+    height: 38px;
+    border: 6px solid rgb(223, 57, 57);
+    box-sizing: border-box;
+    color: rgb(223, 57, 57);
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.simple-text {
+    flex-grow: 1;
+    overflow-x: hidden;
+}
+
+.btn-delete:hover {
+    background-color: rgb(223, 57, 57);
+    color: white;
+}
+
+input[type=checkbox] {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 45px;
+    width: 41px;
+    margin: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type=checkbox]+.custom-checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../../assets/img/todo-empty.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 41px;
+    width: 41px;
+    padding: 0;
+}
+
+input[type=checkbox]:checked+.custom-checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../../assets/img/todo-done.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 42px;
+    width: 41px;
+    padding: 0;
+}

@@ -1,0 +1,56 @@
+.form-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.gray-text {
+    color: gray;
+}
+
+.form-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.input-box {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid rgb(231, 241, 248);
+    border-radius: 4px;
+    outline: none;
+}
+
+.input-box:focus {
+    border: 1px solid rgb(177, 204, 223);
+}
+
+.plus-span {
+    font-family: 'Fredoka One', cursive;
+    position: relative;
+    top: -1px;
+    font-size: 30px;
+    line-height: 23px;
+}
+
+.btn-add {    
+    outline: none;
+    border-radius: 6px;
+    background-color: white;
+    width: 39px;
+    height: 38px;
+    border: 6px solid rgb(0, 191, 58);
+    color: rgb(0, 191, 58);
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.btn-add:hover {
+    background-color: rgb(0, 191, 58);
+    color: white;
+}
